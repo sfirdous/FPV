@@ -13,7 +13,7 @@ aruco_dict = aruco.Dictionary_get(aruco.DICT_5X5_50)
 detector = HomogeneousBgDetector()
 
 # Load Image
-img = cv2.imread("phone.jpg")
+img = cv2.imread("test_image9.jpg")
 
 # Get Aruco marker
 corners, _, _ = aruco.detectMarkers(img, aruco_dict, parameters=parameters)
@@ -51,5 +51,7 @@ for cnt in contours:
 
 
 
-cv2.imshow("Image", img)
+cv2.namedWindow("Image", cv2.WINDOW_NORMAL)  # Create a named window
+cv2.resizeWindow("Image", 800, 600)  # Adjust the window size to 800x600
+cv2.imshow("Image", img)  # Show the image in the resized window
 cv2.waitKey(0)
