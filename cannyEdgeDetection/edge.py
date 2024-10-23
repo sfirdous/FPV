@@ -2,10 +2,10 @@ import cv2
 import numpy as np
 
 # Load and convert the image to grayscale
-image = cv2.imread('secondComponent.jpg')
+image = cv2.imread('test2.png')
 image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-# Perform edge detection
+# Perform edge detection  can you add the code to first convert the image to grey scale 
 gradients_sobelx = cv2.Sobel(image, -1, 1, 0)
 gradients_sobely = cv2.Sobel(image, -1, 0, 1)
 gradients_sobelxy = cv2.addWeighted(gradients_sobelx, 0.5, gradients_sobely, 0.5, 0)
@@ -39,3 +39,4 @@ cv2.imshow('Canny', canny_output)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
