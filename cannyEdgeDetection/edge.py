@@ -1,6 +1,10 @@
 import cv2
 import numpy as np
 
+#block to remove background from image
+
+#block to add a plain white background to the image 
+
 # Load and convert the image to grayscale
 image = cv2.imread('test2.png')
 image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
