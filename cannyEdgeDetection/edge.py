@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image
-image = cv2.imread('testx.jpg')
+image = cv2.imread('test.jpg')
 
 # Convert the image to grayscale
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -58,5 +58,6 @@ cv2.imshow('Canny', canny_output)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
 
 
