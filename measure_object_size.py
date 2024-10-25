@@ -13,7 +13,7 @@ aruco_dict = aruco.Dictionary_get(aruco.DICT_5X5_50)
 detector = HomogeneousBgDetector()
 
 # Load Image
-img = cv2.imread("test_image9.jpg")
+img = cv2.imread("test_image15.jpg")
 
 # Get Aruco marker
 corners, _, _ = aruco.detectMarkers(img, aruco_dict, parameters=parameters)
