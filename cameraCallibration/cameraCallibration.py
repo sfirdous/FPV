@@ -65,3 +65,20 @@ print("rvecs : \n")
 print(rvecs)
 print("tvecs : \n")
 print(tvecs)
+
+# Print the focal lengths (fx, fy) and the principal point (cx, cy)
+fx = mtx[0, 0]
+fy = mtx[1, 1]
+cx = mtx[0, 2]
+cy = mtx[1, 2]
+
+print("Focal Lengths:")
+print("fx =", fx)
+print("fy =", fy)
+print("Principal Point:")
+print("cx =", cx)
+print("cy =", cy)
+
+# Print distortion coefficients in detail
+print("Distortion coefficients:")
+print("k1, k2, p1, p2, k3 =", dist.ravel())
