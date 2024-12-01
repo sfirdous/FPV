@@ -8,7 +8,7 @@ P = np.array([[fx, 0, cx],
               [0,  0,  1]])
 
 # Image point (2D) in homogeneous coordinates
-x_image = np.array([u, v, 1])  # Replace u, v with actual image coordinates
+x_image = np.array([[105.37255, 158.19608,1])  # Replace u, v with actual image coordinates
 
 # Compute the pseudoinverse of P
 P_pseudo = np.linalg.pinv(P)
