@@ -7,13 +7,19 @@ P = np.array([[fx, 0, cx],
               [0, fy, cy],
               [0,  0,  1]])
 
-# Image point (2D) in homogeneous coordinates
-x_image = np.array([[105.37255, 158.19608,1])  # Replace u, v with actual image coordinates
+# Image points (2D) in homogeneous coordinates
+image_points = np.array([
+    [105.37255, 158.19608, 1],  # First coordinate
+    [224.78767, 283.7525, 1],   # Second coordinate
+    [104.54036, 285.1601, 1]    # Third coordinate
+])
 
 # Compute the pseudoinverse of P
 P_pseudo = np.linalg.pinv(P)
 
-# Solve for X in camera coordinates
-X_camera = P_pseudo @ x_image
+# Solve for 3D camera coordinates for each image point
+camera_coordinates = [P_pseudo @ point for point in image_points]
 
-print("3D Camera Coordinates:", X_camera)
+# Print the 3D camera coordinates
+for i, coord in enumerate(camera_coordinates, 1):
+    print(f"3D Camera Coordinates for Point {i}: {coord}")
