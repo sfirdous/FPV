@@ -23,3 +23,5 @@ camera_coordinates = [P_pseudo @ point for point in image_points]
 # Print the 3D camera coordinates
 for i, coord in enumerate(camera_coordinates, 1):
     print(f"3D Camera Coordinates for Point {i}: {coord}")
+
+#to calculate the X
