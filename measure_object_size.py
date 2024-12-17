@@ -1,4 +1,4 @@
-jiimport cv2
+import cv2
 import cv2.aruco as aruco
 
 from object_detector import *
