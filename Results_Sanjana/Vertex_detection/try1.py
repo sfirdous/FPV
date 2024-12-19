@@ -2,7 +2,7 @@
 import cv2
 
 # read the input image
-img = cv2.imread(r'C:\Users\perfe\Downloads\Triangle.png')
+img = cv2.imread('D:\FPV\Results_Sanjana\Vertex_detection\Shapes\Square_vivoT15g.jpg')
 
 # convert the image to grayscale
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

@@ -4,7 +4,7 @@ import numpy as np
 # img = cv2.imread(r'C:\Users\perfe\Downloads\Triangle.png')
 # img = cv2.imread(r'Pentagon.png')
 # img = cv2.imread(r'Shapes/Triangle.png')
-img = cv2.imread(r'Shapes/DrawnTriangle.jpg')
+img = cv2.imread('D:\FPV\Results_Sanjana\Vertex_detection\Shapes\Square_vivoT15g.jpg')
 img1 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 ret,thresh = cv2.threshold(img1,150,255,0)

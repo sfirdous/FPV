@@ -7,7 +7,7 @@ import numpy as np
 # image = cv2.imread('Pentagon.png') 
 # image = cv2.imread('Triangle.jpg') 
 # image = cv2.imread('Irregular_Pentagon.jpg') 
-image = cv2.imread('Shapes/Pentagon_RandomShape.png') 
+image = cv2.imread('Shapes/Square_vivoT15g.jpg') 
   
 # convert the input image into 
 # grayscale color space 

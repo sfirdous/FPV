@@ -3,7 +3,7 @@ import cv2 as cv
  
 # filename = 'Irregular_Pentagon.jpg'
 # filename = 'Shapes/DrawnTriangle.jpg'
-filename = 'Shapes/Pentagon_RandomShape.png'
+filename = 'D:\FPV\Results_Sanjana\Vertex_detection\Shapes\Square_vivoT15g.jpg'
 # filename = 'Shapes/Irregular_Pentagon.jpg'
 # filename = 'Shapes/Pentagon.png'
 # filename = 'Shapes/Triangle.png'
