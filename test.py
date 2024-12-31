@@ -3,7 +3,7 @@ import openai
 # Function to describe an image using ChatGPT
 def describe_image(image_path):
     # Note: Ensure you have the OpenAI API key set as an environment variable
-    openai.api_key = "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"
+    openai.api_key = "api"
 
     try:
         # Convert the image to bytes for API processing if needed
